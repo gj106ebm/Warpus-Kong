@@ -5,7 +5,7 @@ static const Colour kBlack = Colours::black, kWhite = Colours::white;
 // ======================================================================= look & feel
 Font BWLookAndFeel::mono (float h, bool bold)
 {
-    return Font (FontOptions (Font::getDefaultMonospacedFontName(), h, bold ? Font::bold : Font::plain));
+    return Font (Font::getDefaultMonospacedFontName(), h, bold ? Font::bold : Font::plain);
 }
 
 BWLookAndFeel::BWLookAndFeel()
