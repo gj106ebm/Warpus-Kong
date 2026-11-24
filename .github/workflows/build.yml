@@ -12,13 +12,13 @@ jobs:
         include:
           - name: Windows-64bit
             os: windows-latest
-            args: "-A x64"
+            args: "-A x64 -DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded"
           - name: Windows-32bit
             os: windows-latest
-            args: "-A Win32"
+            args: "-A Win32 -DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded"
           - name: macOS
             os: macos-latest
-            args: "-DCMAKE_OSX_ARCHITECTURES=arm64;x86_64"
+            args: '-DCMAKE_OSX_ARCHITECTURES="arm64;x86_64"'
           - name: Linux
             os: ubuntu-latest
             args: ""
